@@ -10,5 +10,7 @@ As your score increases, the snake gets fast... like very fast. The numbers get 
 
 
 # Coming Soon
-This was a highschool project made in 2024. If I were to ever update this it would be a full re-write with a proper grid system and proper GUI with adjustable settings (resolution, difficulty)
+This was a highschool project made in 2024. If I were to ever update this it would be a full re-write with a proper grid system and proper GUI with adjustable settings (resolution, difficulty).
+
+I would also like to extend the scope beyond just arithmetic maths (and snake). 
 
