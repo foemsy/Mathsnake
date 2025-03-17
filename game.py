@@ -273,24 +273,24 @@ while game_running: # game loop
     if event.type == pygame.QUIT:
       sys.exit()
     
-    if yvelocity != (speed): 
-      if keys[pygame.K_s] or keys[pygame.K_DOWN]: # if down or s key is pressed, move down constantly
-          yvelocity = -(speed)
-          xvelocity = 0
-    if yvelocity != -(speed):
-      if keys[pygame.K_w] or keys[pygame.K_UP]:
-        yvelocity = speed
+  if yvelocity != (speed): 
+    if keys[pygame.K_s] or keys[pygame.K_DOWN]: # if down or s key is pressed, move down constantly
+        yvelocity = -(speed)
         xvelocity = 0
-        
-    if xvelocity != (speed): 
-      if keys[pygame.K_LEFT] or keys[pygame.K_a]:
-        yvelocity = 0
-        xvelocity = -(speed)
-  
-    if xvelocity != -(speed):
-      if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
-        yvelocity = 0
-        xvelocity = speed
+  if yvelocity != -(speed):
+    if keys[pygame.K_w] or keys[pygame.K_UP]:
+      yvelocity = speed
+      xvelocity = 0
+      
+  if xvelocity != (speed): 
+    if keys[pygame.K_LEFT] or keys[pygame.K_a]:
+      yvelocity = 0
+      xvelocity = -(speed)
+
+  if xvelocity != -(speed):
+    if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
+      yvelocity = 0
+      xvelocity = speed
         
   y = ymovement(y,yvelocity)
   x = xmovement(x,xvelocity)
